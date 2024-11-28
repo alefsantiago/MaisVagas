@@ -1,6 +1,7 @@
 {
   "name": "+Vagas",
   "short_name": "VGA",
+  "description": "Aplicativo de ofertas de estágio",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#000000",
