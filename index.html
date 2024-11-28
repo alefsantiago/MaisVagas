@@ -56,157 +56,158 @@
         </div>
       </div>
     </nav>
-</div>
+  </div>
 
 
-    <!-- Modal Entre -->
-    <div class="modal fade" id="modalEntre" tabindex="-1" aria-labelledby="modalEntreLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalEntreLabel">Entre</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <!-- Modal Entre -->
+  <div class="modal fade" id="modalEntre" tabindex="-1" aria-labelledby="modalEntreLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEntreLabel">Entre</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <button class="btn btn-outline-dark login-btn">
+                <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google Logo" class="me-2">
+                Continue com Google
+              </button>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-outline-dark login-btn">
+                <img src="https://img.icons8.com/ios-filled/16/000000/mac-os.png" alt="Apple Logo" class="me-2">
+                Entrar com a Apple
+              </button>
+            </div>
+            <div class="separator">ou</div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email ou número de telefone</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted"><a href="#">Esqueceu sua senha?</a></small>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal "Cadastre-se" -->
+  <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCadastroLabel">Cadastre-se</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">E-mail ou número de telefone</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha (+ de 6 caracteres)</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Lembrar dos meus dados</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Aceite e cadastre</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <h1 id="title">Principais Vagas</h1>
+
+  <!-- cards -->
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/estagio1.jpg" class="card-img-top" alt="Reunião de estagiários">
+          <div class="card-body">
+            <h5 class="card-title">Estagio de TI</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Detalhes</a>
           </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <button class="btn btn-outline-dark login-btn">
-                  <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google Logo" class="me-2">
-                  Continue com Google
-                </button>
-              </div>
-              <div class="form-group">
-                <button class="btn btn-outline-dark login-btn">
-                  <img src="https://img.icons8.com/ios-filled/16/000000/mac-os.png" alt="Apple Logo" class="me-2">
-                  Entrar com a Apple
-                </button>
-              </div>
-              <div class="separator">ou</div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email ou número de telefone</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted"><a href="#">Esqueceu sua senha?</a></small>
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-              </div>
-              <br>
-              <button type="submit" class="btn btn-primary">Entrar</button>
-            </form>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/estagio2.jpg" class="card-img-top" alt="pessoas trabalhando">
+          <div class="card-body">
+            <h5 class="card-title">Desenvolvedor JR.</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/estagio3.jpg" class="card-img-top" alt="duas pessoas trabalhando">
+          <div class="card-body">
+            <h5 class="card-title">Design Gráfico</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/estagio4.jpg" class="card-img-top" alt="Escritorio da empresa">
+          <div class="card-body">
+            <h5 class="card-title">Gestor de TI</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Detalhes</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal "Cadastre-se" -->
-    <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalCadastroLabel">Cadastre-se</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">E-mail ou número de telefone</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <br>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Senha (+ de 6 caracteres)</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-              </div>
-              <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Lembrar dos meus dados</label>
-              </div>
-              <br>
-              <button type="submit" class="btn btn-primary">Aceite e cadastre</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+  <br>
+  <br>
 
 
 
-    <h1 id="title">Principais Vagas</h1>
-
-    <!-- cards -->
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/estagio1.jpg" class="card-img-top" alt="Reunião de estagiários">
-            <div class="card-body">
-              <h5 class="card-title">Estagio de TI</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Detalhes</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/estagio2.jpg" class="card-img-top" alt="pessoas trabalhando">
-            <div class="card-body">
-              <h5 class="card-title">Desenvolvedor JR.</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Detalhes</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/estagio3.jpg" class="card-img-top" alt="duas pessoas trabalhando">
-            <div class="card-body">
-              <h5 class="card-title">Design Gráfico</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Detalhes</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./assets/estagio4.jpg" class="card-img-top" alt="Escritorio da empresa">
-            <div class="card-body">
-              <h5 class="card-title">Gestor de TI</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Detalhes</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <br>
-
-
-
-    <!-- Roda Pé -->
+  <!-- Roda Pé -->
   </footer>
   <section id="copy-right">
-    <div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>  
-      Feito por Alef Santiago <a href="#">+Vagas</a> 
+    <div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>
+      Feito por Alef Santiago <a href="#">+Vagas</a>
     </div>
   </section>
 
 
   </div>
-  
+
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/service-worker.js')
         .then(() => console.log('Service Worker registrado com sucesso!'))
         .catch((error) => console.error('Falha ao registrar o Service Worker:', error));
     }
+
   </script>
 
   <script src="app.js"></script>
