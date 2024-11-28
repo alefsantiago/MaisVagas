@@ -3,8 +3,8 @@
   "short_name": "VGA",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#f9f9fa",
-  "theme_color": "#f9f9fa",
+  "background_color": "#000000",
+  "theme_color": "#3498db",
   "icons": [
     {
       "src": "/assets/logo192x192.png",
