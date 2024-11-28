@@ -1,0 +1,73 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: 'inter', sans-serif;
+    
+}
+
+#emailHelp a {
+    text-decoration: none;
+}
+
+.bg-color {
+    background-color: #327da8;
+}
+
+.bg-color .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.bg-color .nav-link:hover {
+    color: #000000;
+}
+
+#title {
+    text-align: center;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+.login-btn {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.copy-right-sec {
+    padding: 1.8rem;
+    background: #327da8;
+    margin-top: 310px;
+    color: #fff;
+    text-align: center;
+}
+
+.copy-right-sec a {
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+}

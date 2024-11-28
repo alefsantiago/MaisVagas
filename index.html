@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="manifest" href="manifest.json">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>+Vagas</title>
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div id="container">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/logo.png" width="120" height="58" alt="logo da empresa"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vagas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Estágio Não Remunerado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ajuda</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button type="button" class="btn btn-light px-3 me-2" data-bs-toggle="modal" data-bs-target="#modalEntre">
+              Entre
+            </button>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalCadastro">
+              Cadastre-se
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+</div>
+
+
+    <!-- Modal Entre -->
+    <div class="modal fade" id="modalEntre" tabindex="-1" aria-labelledby="modalEntreLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEntreLabel">Entre</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <button class="btn btn-outline-dark login-btn">
+                  <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google Logo" class="me-2">
+                  Continue com Google
+                </button>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-outline-dark login-btn">
+                  <img src="https://img.icons8.com/ios-filled/16/000000/mac-os.png" alt="Apple Logo" class="me-2">
+                  Entrar com a Apple
+                </button>
+              </div>
+              <div class="separator">ou</div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email ou número de telefone</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted"><a href="#">Esqueceu sua senha?</a></small>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal "Cadastre-se" -->
+    <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCadastroLabel">Cadastre-se</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">E-mail ou número de telefone</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Senha (+ de 6 caracteres)</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Lembrar dos meus dados</label>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Aceite e cadastre</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h1 id="title">Principais Vagas</h1>
+
+    <!-- cards -->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/estagio1.jpg" class="card-img-top" alt="Reunião de estagiários">
+            <div class="card-body">
+              <h5 class="card-title">Estagio de TI</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Detalhes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/estagio2.jpg" class="card-img-top" alt="pessoas trabalhando">
+            <div class="card-body">
+              <h5 class="card-title">Desenvolvedor JR.</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Detalhes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/estagio3.jpg" class="card-img-top" alt="duas pessoas trabalhando">
+            <div class="card-body">
+              <h5 class="card-title">Design Gráfico</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Detalhes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/estagio4.jpg" class="card-img-top" alt="Escritorio da empresa">
+            <div class="card-body">
+              <h5 class="card-title">Gestor de TI</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Roda Pé -->
+  </footer>
+  <section id="copy-right">
+    <div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>  
+      Feito por Alef Santiago <a href="#">+Vagas</a> 
+    </div>
+  </section>
+
+
+  </div>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker registrado com sucesso!'))
+        .catch((error) => console.error('Falha ao registrar o Service Worker:', error));
+    }
+  </script>
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
