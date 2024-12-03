@@ -6,14 +6,14 @@ self.addEventListener('install', (event) => {
         './index.html',
         './styles.css',
         './app.js',
-        './logo.png',
-        './logo192x192.png',
-        './logo512x512.png',
-        './screenshot-mobile.png',
-        './estagio1.jpg',   
-        './estagio2.jpg',
-        './estagio3.jpg',
-        './estagio4.jpg'
+        './assets/logo.png',
+        './assets/logo192x192.png',
+        './assets/logo512x512.png',
+        './assets/screenshot-mobile.png',
+        './assets/estagio1.jpg',   
+        './assets/estagio2.jpg',
+        './assets/estagio3.jpg',
+        './assets/estagio4.jpg'
       ]);
     })
   );
