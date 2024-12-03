@@ -1,7 +1,10 @@
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
+document.addEventListener('DOMContentLoaded', () => {
+  const myModal = document.getElementById('myModal');
+  const myInput = document.getElementById('myInput');
 
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
-
+  if (myModal && myInput) {
+    myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus();
+    });
+  }
+});
