@@ -201,14 +201,6 @@
 
   </div>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then(() => console.log('Service Worker registrado com sucesso!'))
-        .catch((error) => console.error('Falha ao registrar o Service Worker:', error));
-    }
-
-  </script>
 
   <script src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
