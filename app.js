@@ -43,3 +43,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
     });
   }
 });
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  console.log('Evento beforeinstallprompt disparado');
+});
