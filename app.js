@@ -28,19 +28,23 @@ let deferredPrompt;
 const installButton = document.getElementById('install-button');
 
 window.addEventListener('beforeinstallprompt', (event) => {
-  event.preventDefault();
-  deferredPrompt = event;
+    event.preventDefault(); 
+    deferredPrompt = event;  
 
-  if (installButton) {
-    installButton.style.display = 'block';
+    if (installButton) {
+        installButton.style.display = 'block';  
+    }
 
     installButton.addEventListener('click', () => {
-      deferredPrompt.prompt();
-
-      deferredPrompt.userChoice.then((choiceResult) => {
-        console.log(choiceResult.outcome);
-        deferredPrompt = null;
-      });
+        deferredPrompt.prompt(); 
+        deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+                console.log('Usuário aceitou a instalação do PWA');
+            } else {
+                console.log('Usuário rejeitou a instalação do PWA');
+            }
+            deferredPrompt = null; 
+        });
     });
-  }
 });
+
