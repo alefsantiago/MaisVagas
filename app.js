@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const myModal = document.getElementById('myModal');
   const myInput = document.getElementById('myInput');
-
-  console.log(myModal, myInput);  
+ 
 
   if (myModal && myInput) {
     myModal.addEventListener('shown.bs.modal', () => {
